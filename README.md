@@ -23,6 +23,8 @@ node-depictions
     │   │   │   ├───tweakinaction.gif
 ```
 
+**The URL for your depiction will then be http://example.com/depictions/com.your.package/**
+
 ###Info.json
 Your Info.json file can contain the following keys:
 
