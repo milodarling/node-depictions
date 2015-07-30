@@ -14,13 +14,14 @@ node-depictions
 ├───index.js
 ├───...    
 └───public
-    ├───data
-    │   ├───com.your.package
-    │   │   ├───Info.json
-    │   │   ├───screenshots
-    │   │   │   ├───screen1.png
-    │   │   │   ├───screen2.jpg
-    │   │   │   ├───tweakinaction.gif
+	├───depictions
+    │   ├───data
+    │   │   ├───com.your.package
+    │   │   │   ├───Info.json
+    │   │   │   ├───screenshots
+    │   │   │   │   ├───screen1.png
+    │   │   │   │   ├───screen2.jpg
+    │   │   │   │   ├───tweakinaction.gif
 ```
 
 **The URL for your depiction will then be http://example.com/depictions/com.your.package/**
