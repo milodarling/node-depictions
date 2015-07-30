@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title #{title} Feature List
+		base(target="_top")
+		link(rel="stylesheet", type="text/css", href="../../style/style.css")
+		meta(name="viewport", content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		script(type="text/javascript", src="../../js/thankssaurik.js")
+	body.pinstripe
+		panel
+			label Feature List
+			fieldset
+				div
+					if (features)
+						-for (var i=0; i<features.length; i++)
+							if i != 0
+								hr
+							p !{features[i]}
+					else
+						p No feature list available :(

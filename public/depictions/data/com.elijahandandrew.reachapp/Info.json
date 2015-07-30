@@ -1,0 +1,40 @@
+{
+	"title": "ReachApp",
+	"shortdescription": "Use two apps at once!",
+	"fulldescription": "Reachability is a new feature added in iOS 8, specifically for iPhone 6 and iPhone 6 Plus. Most people, however, find it fairly useless. ReachApp adds the ability to put an app into the Reachability view for true split-screen multitasking. It can also do this with the Notification Center. There are several options to configure. A full feature list can be found below.",
+	"compatibility": {
+		"minimum": 8.0,
+		"maximum": 8.4
+	},
+	"changes": [
+		{
+			"date": "May 11, 2015",
+			"version": "0.0.3-52",
+			"changes": [
+				"Added memes",
+				"More memes",
+				"Faster"
+			]
+		},
+		{
+			"date": "May 10, 2015",
+			"version": "0.0.3-51",
+			"changes": [
+				"Change 1",
+				"Change 2",
+				"Change 3"
+			]
+		}
+	],
+	"features": [
+		"Multitasking",
+		"Reachability",
+		"Swag",
+		"<strong>Use HTML tags!</strong>"
+	],
+	"knownbugs": [
+		"Not enough memes",
+		"It crashes"
+	],
+	"email": "you@example.com"
+}

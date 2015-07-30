@@ -1,0 +1,30 @@
+{
+  "name": "node-depictions",
+  "version": "1.0.0",
+  "description": "Cydia depictions written in Node.js + Jade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milodarling/node-depictions.git"
+  },
+  "keywords": [
+    "node",
+    "jade",
+    "cydia",
+    "depiction"
+  ],
+  "author": "Milo Darling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milodarling/node-depictions/issues"
+  },
+  "homepage": "https://github.com/milodarling/node-depictions",
+  "dependencies": {
+    "express": "^4.13.1",
+    "express-slash": "^2.0.1",
+    "jade": "^1.11.0"
+  }
+}

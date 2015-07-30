@@ -1,0 +1,85 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title #{title}
+		base(target='_top')
+		link(rel='stylesheet', type='text/css', href='../style/style.css')
+		meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(name='format-detection', content='telephone=no')
+		script(type='text/javascript', src='../js/thankssaurik.js')
+
+	body.pinstripe
+		panel
+			if compatibility
+				| <block id="version"></block>
+			label Info
+			if (shortdescription)
+				| <block>
+				p !{shortdescription}
+				| </block>
+			fieldset
+				div
+					p !{fulldescription}
+				if (screenshots)
+					a(href='./screenshots/')
+						img.icon(src='../images/screenshots.png', width='58', height='58')
+						div
+							div
+								label
+									p Screenshots
+				if (features)
+					a(href='./featurelist/')
+						img.icon(src='../images/featurelist.png', width='58', height='58')
+						div
+							div
+								label
+									p Feature List
+			if (changes && changes[0])
+				label New in Version #{changes[0]["version"]} (#{changes[0]["date"]})
+				fieldset
+					div
+						-for (var i=0; i < changes[0]["changes"].length; i++)
+							if (i!=0)
+								hr
+							p !{changes[0]["changes"][i]}
+					a(href='./changelog/')
+						img.icon(src='../images/changelog.png', width='58', height='58')
+						div
+							div
+								label
+									p Full Changelog
+			if (knownbugs)
+				label Bugs
+				fieldset
+					div
+						p Unfortunately, #{title} isn't perfect (yet) and we've got some bugs. You can see the one's we're aware of here, and email us to report more.
+					a(href='./knownbugs/')
+						img.icon(src='../images/knownbugs.png', width='58', height='58')
+						div
+							div
+								label
+									p Known Bugs
+					if email
+						a(href='mailto:#{email}?subject=#{title}')
+							img.icon(src='../images/email.png', width='58', height='58')
+							div
+								div
+									label
+										p Email Us
+		script(type="text/javascript").
+			function iOSversion() {
+				if (/iP(hone|od|ad)/.test(navigator.platform)) {
+					var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+					return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+				} else {
+					return 0;
+				}
+			}
+			ver = iOSversion();
+			var versionNumber = parseFloat(ver[0]+'.'+ver[1]);
+			if (versionNumber >= #{compatibility["minimum"]} && versionNumber <= #{compatibility["maximum"]}) {
+				document.getElementById('version').innerHTML='<p><strong>✓</strong> Your device is supported.</p>';
+			} else {
+				document.getElementById('version').innerHTML='<p><strong>✗</strong> Your device is not supported.</p>';
+			}
