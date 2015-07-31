@@ -89,7 +89,8 @@ html.cytyle-faux #cytyle-metric {
     font-size: 16px
 }
 html.cytyle-flat {
-    font-family: "Helvetica Neue", Helvetica, Arial
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial;
+    color: #1e1e1e
 }
 html.cytyle-flat #cytyle-metric {
     font-size: 17px
@@ -107,7 +108,7 @@ body.white {
     background: #c7ced5 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAIAAACdaSOZAAAAFElEQVQIHWM4euYKErp0+tINIAIAuHQQ4rDrv5YAAAAASUVORK5CYII=')
 }
 .cytyle-flat body.pinstripe {
-    background: #efeff4
+    background: #ececec
 }
 body {
     width: 320px
@@ -149,14 +150,14 @@ panel>hr {
 panel>block {
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 9px;
-    margin-bottom: 9px
+    margin: 9px;
+    border-radius: 10px
 }
 .cytyle-faux panel>block {
     border: 1px dashed #999
 }
 .cytyle-flat panel>block {
-    border: 1px solid #c8c7cc
+    border: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair panel>block {
@@ -189,7 +190,7 @@ panel>fieldset {
     border-top: 1px solid #999
 }
 .cytyle-flat panel>fieldset {
-    border-top: 1px solid #c8c7cc
+    border-top: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair panel>fieldset {
@@ -200,7 +201,7 @@ panel>fieldset {
     border-left: 1px solid #999
 }
 .cytyle-flat panel>fieldset {
-    border-left: 1px solid #c8c7cc
+    border-left: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair panel>fieldset {
@@ -211,7 +212,7 @@ panel>fieldset {
     border-right: 1px solid #999
 }
 .cytyle-flat panel>fieldset {
-    border-right: 1px solid #c8c7cc
+    border-right: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair panel>fieldset {
@@ -297,8 +298,7 @@ panel>iframe+iframe {
 }
 panel>div a {
     color: #586c90;
-    font-weight: bold;
-    text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 0
+    font-weight: bold
 }
 div.cytyle-app {
     position: relative;
@@ -341,7 +341,6 @@ div.cytyle-app>div.left>label {
 }
 .cytyle-faux div.cytyle-app>div.left>label {
     color: #4d4d4d;
-    text-shadow: #fff 0px 1px 0;
     font-weight: bold
 }
 .cytyle-flat div.cytyle-app>div.left>label {
@@ -380,8 +379,7 @@ div.cytyle-app a {
     color: #6a6a6a;
     font-size: 13px;
     font-weight: bold;
-    padding: 0.375em 0.75em;
-    text-shadow: #fff 0px 1px 0
+    padding: 0.375em 0.75em
 }
 .cytyle-flat div.cytyle-app a {
     color: #007aff;
@@ -450,7 +448,7 @@ panel>block>ul {
 }
 .cytyle-flat fieldset>div>hr,
 .cytyle-flat panel>block>hr {
-    border-top: 1px solid #c8c7cc
+    border-top: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair fieldset>div>hr,
@@ -476,7 +474,7 @@ fieldset>textarea {
 .cytyle-flat panel>fieldset>a,
 .cytyle-flat panel>fieldset>div,
 .cytyle-flat panel>fieldset>textarea {
-    border-bottom: 1px solid #c8c7cc
+    border-bottom: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair panel>fieldset>a,
@@ -708,7 +706,7 @@ fieldset>a[type="profile"]>img.icon+div {
     border-left: 1px solid #999
 }
 .cytyle-flat fieldset>a[type="profile"]>img.icon+div {
-    border-left: 1px solid #c8c7cc
+    border-left: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair fieldset>a[type="profile"]>img.icon+div {
@@ -746,7 +744,7 @@ fieldset>a[type="thumb"]>img.icon+div {
     border-left: 1px solid #999
 }
 .cytyle-flat fieldset>a[type="thumb"]>img.icon+div {
-    border-left: 1px solid #c8c7cc
+    border-left: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair fieldset>a[type="thumb"]>img.icon+div {
@@ -770,8 +768,7 @@ div.cy-table>label {
     background-repeat: repeat-x no-repeat-y;
     -webkit-background-size: 1px 23px;
     background-size: 1px 23px;
-    color: #fff;
-    text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 0
+    color: #fff
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-faux div.cy-table>label {
@@ -785,7 +782,7 @@ div.cy-table>label {
     border-right: 1px solid #999
 }
 .cytyle-flat fieldset>.left {
-    border-right: 1px solid #c8c7cc
+    border-right: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair fieldset>.left {
@@ -813,7 +810,7 @@ panel>fieldset.half {
     border-right: 1px solid #999
 }
 .cytyle-flat fieldset.half>a {
-    border-right: 1px solid #c8c7cc
+    border-right: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair fieldset.half>a {
@@ -885,7 +882,7 @@ fieldset>a>div>div>input[type="checkbox"]:checked {
     border: 1px solid #999
 }
 .cytyle-flat fieldset>a>div>div>input[type="checkbox"] {
-    border: 1px solid #c8c7cc
+    border: 1px solid #efeff4
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .cytyle-flat.cytyle-hair fieldset>a>div>div>input[type="checkbox"] {
@@ -911,8 +908,7 @@ fieldset>a>div>div>select {
     direction: rtl;
     float: right;
     min-width: 100px;
-    text-indent: 0.01px;
-    text-overflow: ""
+    text-indent: 0.01px
 }
 fieldset>a>div>div>select::-ms-expand {
     display: none
