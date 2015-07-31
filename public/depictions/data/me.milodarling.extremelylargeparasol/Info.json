@@ -1,0 +1,19 @@
+{
+	"title": "ExtremelyLargeParasol",
+	"shortdescription": "Save your SHSH blobs with Activator!",
+	"fulldescription": "You should really be saving your blobs, so with this utility, you can automate it! This grabs the blobs from Apple's server, not your device. You can choose where to save them on your filesystem, and you can choose whether you want to overwrite blobs when saving new ones.<br/>Huge thanks to iNeal for savethemblobs, which inspired and helped this project, and for his website with a great API for saving blobs.",
+	"changes": [
+		{
+			"date": "March 26, 2015",
+			"version": "0.0.1-10",
+			"changes": [
+				"Initial release"
+			]
+		}
+	],
+	"features": [
+		"Saves SHSH blobs for the device it is running on",
+		"Configurable triggering via Activator"
+	],
+	"email": "milo@milodarling.me"
+}

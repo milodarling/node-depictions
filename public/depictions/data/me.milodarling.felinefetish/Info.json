@@ -1,0 +1,23 @@
+{
+	"title": "Feline Fetish",
+	"shortdescription": "Feline Fetish Chimichanga!",
+	"fulldescription": "A groundbreaking tweak that autocorrects every word you type (at least, it should) to either feline, fetish, or chimichanga.<br/>Made by Milo Darling, idea by Morgan Webster.",
+	"changes": [
+		{
+			"date": "June 20, 2015",
+			"version": "0.0.1",
+			"changes": [
+				"Initial beta release"
+			]
+		}
+	],
+	"features": [
+		"Feline",
+		"Fetish",
+		"Chimichanga"
+	],
+	"knownbugs": [
+		"It crashes and doesn't autocorrect sometimes"
+	],
+	"email": "milo@milodarling.me"
+}

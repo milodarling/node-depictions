@@ -1,0 +1,19 @@
+{
+	"title": "BetterSliders",
+	"shortdescription": "Add a popup for sliders",
+	"fulldescription": "This tweak adds the ability to tap a slider cell in the Settings app to enter a specific value, so you don't have to use the slider.<br/>Thanks to <a href='https://twitter.com/friggog' target='_blank'>Charlie Hewitt</a> for the code from BetterPSSliderCell.",
+	"compatibility": {
+		"minimum": 8.0,
+		"maximum": 8.4
+	},
+	"changes": [
+		{
+			"date": "July 31, 2015",
+			"version": "0.0.1",
+			"changes": [
+				"Initial release"
+			]
+		}
+	],
+	"email": "milo@milodarling.me"
+}

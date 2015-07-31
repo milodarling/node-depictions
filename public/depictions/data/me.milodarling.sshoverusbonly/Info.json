@@ -1,0 +1,18 @@
+{
+	"title": "SSHOverUSBOnly",
+	"shortdescription": "Restrict SSH to localhost only",
+	"fulldescription": "This package disabled SSH over WiFi and restricts it to running over USB only. This helps prevent from attacks over WiFi, because in order to access your device via SSH, an attacker (or you) will need to physically have the device.<br/>If you don't know how to SSH over USB, there are guides on <a href=\"http://iphonedevwiki.net/index.php/SSH_Over_USB\" target=\"_blank\">this iPhoneDevWiki page</a> and on these sharedInstance posts: <a href=\"http://sharedinstance.net/2014/12/setting-up-ssh-via-usb-connection/\" target=\"_blank\">OS X</a>, <a href=\"http://sharedinstance.net/2015/02/setting-up-ssh-via-usb-connection-win/\" target=\"_blank\">Windows</a>, and <a href=\"http://sharedinstance.net/2015/02/setting-up-ssh-via-usb-connection-linux/\" target=\"_blank\">Linux</a>.",
+	"changes": [
+		{
+			"date": "April 5, 2015",
+			"version": "0.0.1-13",
+			"changes": [
+				"Initial release"
+			]
+		}
+	],
+	"features": [
+		"Restricts SSH to localhost only for safety"
+	],
+	"email": "milo@milodarling.me"
+}

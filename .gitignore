@@ -1,1 +1,7 @@
 node_modules/
+*.deb
+Packages
+Packages.bz2
+Packages.gz
+Release
+Release.gpg
