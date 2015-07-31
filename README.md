@@ -5,14 +5,15 @@ See it in action [here](http://nodedepictions.milodarling.me/depictions/com.elij
 
 This will create pretty depictions for your projects, complete with a short description, full description, changelog, feature list, known bugs, and more.
 
-Design thanks to [@xTheMaster3x](https://github.com/xTheMaster3x) and [@aabosh](https://github.com/aabosh).
+Design thanks to [xTheMaster3x](https://github.com/xTheMaster3x) and [aabosh](https://github.com/aabosh).
+Modified by [Hœenir](https://github.com/hoenir_)
 
 In order to add a depiction, simply add a folder with your package's identifier, containing an Info.json file and an optional `screenshots` folder, into `public/depictions/data/`. The layout should look like this:
 
 ```
 node-depictions
 ├───index.js
-├───...    
+├───...
 └───public
     ├───data
     │   ├───com.your.package
